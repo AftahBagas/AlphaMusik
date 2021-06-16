@@ -1,5 +1,5 @@
-from pyrogram import Client, errors
-from pyrogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessageContent
+from telethon import Client, errors
+from telethon.types import InlineQuery, InlineQueryResultArticle, InputTextMessageContent
 
 from youtubesearchpython import VideosSearch
 
