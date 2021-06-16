@@ -1,6 +1,6 @@
 from typing import Union, List
 
-from pyrogram import filters
+from telethon import filters
 
 from config import COMMAND_PREFIXES
 
