@@ -1,7 +1,7 @@
 from os import path
 
-from pyrogram import Client
-from pyrogram.types import Message, Voice
+from telethon import Client
+from telethon.types import Message, Voice
 
 from callsmusic import callsmusic, queues
 
