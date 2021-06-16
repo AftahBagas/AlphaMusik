@@ -3,7 +3,7 @@ import requests
 import aiohttp
 import youtube_dl
 
-from pyrogram import filters, Client
+from telethon import filters, Client
 from youtube_search import YoutubeSearch
 
 def time_to_seconds(time):
