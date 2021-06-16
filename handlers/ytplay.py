@@ -3,8 +3,8 @@ from os import path
 import requests
 import aiohttp
 import youtube_dl
-from pyrogram import Client
-from pyrogram.types import Message, Voice
+from telethon import Client
+from telethon.types import Message, Voice
 from youtube_search import YoutubeSearch
 from callsmusic import callsmusic, queues
 
