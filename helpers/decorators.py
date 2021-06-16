@@ -1,7 +1,7 @@
 from typing import Callable
 
-from pyrogram import Client
-from pyrogram.types import Message
+from telethon import Client
+from telethon.types import Message
 
 from helpers.admins import get_administrators
 from config import SUDO_USERS
