@@ -1,20 +1,20 @@
 # the logging things
 import logging
 
-from pyrogram.types import Message
+from telethon.types import Message
 from search_engine_parser import GoogleSearch
 from youtube_search import YoutubeSearch
 
-from pyrogram import Client as app, filters
+from telethon import Client as app, filters
 
 logging.basicConfig(
     level=logging.DEBUG, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
 
-import pyrogram
+import telethon
 
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
+logging.getLogger("telethon").setLevel(logging.WARNING)
 
 @app.on_message(pyrogram.filters.command(["search"]))
 async def ytsearch(_, message: Message):
