@@ -20,7 +20,7 @@ async def pause(_, message: Message):
     ):
         await message.reply_text("❗ Nothing is playing!")
     else:
-        callsmusic.pytgcalls.pause_stream(message.chat.id)
+        callsmusic.teletgcalls.pause_stream(message.chat.id)
         await message.reply_text("▶️ Paused!")
 
 
@@ -35,7 +35,7 @@ async def resume(_, message: Message):
     ):
         await message.reply_text("❗ Nothing is paused!")
     else:
-        callsmusic.pytgcalls.resume_stream(message.chat.id)
+        callsmusic.teletgcalls.resume_stream(message.chat.id)
         await message.reply_text("⏸ Resumed!")
 
 
@@ -51,7 +51,7 @@ async def stop(_, message: Message):
         except QueueEmpty:
             pass
 
-        callsmusic.pytgcalls.leave_group_call(message.chat.id)
+        callsmusic.teletgcalls.leave_group_call(message.chat.id)
         await message.reply_text("❌ Stopped streaming!")
 
 
