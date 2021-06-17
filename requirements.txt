@@ -1,6 +1,6 @@
 telethon
 TgCrypto
-py-tgcalls
+tele-tgcalls
 python-dotenv
 youtube_dl
 youtube_search_python
